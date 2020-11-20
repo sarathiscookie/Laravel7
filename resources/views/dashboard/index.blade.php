@@ -15,9 +15,11 @@
           <div class="alert alert-success">
               {{ session('status') }} <br><br>
 
-              Js File:- {{ session('clientJS') }} <br><br>
+              <strong>Important !</strong>:- Include jquery library. <br><br>
 
-              Button Link:- {{ session('clientURL') }}
+              <strong>Js File</strong>:- {{ session('clientJS') }} <br><br>
+
+              <strong>Button Link</strong>:- {{ session('clientURL') }}
           </div>
         @endif
 

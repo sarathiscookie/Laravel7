@@ -20,10 +20,12 @@ $(function() {
 			type: "GET"
 		})
 			.done(function(result) {
-				console.log(result);
 				if (result.status === "success") {
-					// Create popup.
-					console.log(result.status);
+					
+					let html = `Model Name: ${result.model.name}, Model Number: ${result.model.number}, Model Size: ${result.model.size}`;
+
+					// Popup the model details
+					alert(html);
 				}
 			})
 			.fail(function(data) {
